@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .task-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .deleteBtn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .deleteBtn:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Todo List</h1>
+
+    <input type="text" id="task" placeholder="Enter a task">
+    <button id="addBtn">Add</button>
+
+    <div id="list"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
