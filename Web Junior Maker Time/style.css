@@ -12,19 +12,23 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background: linear-gradient(45deg ,#22C1C3, #FDBB2D);
+  color: #000000;
   line-height: 1.6;
   padding: 20px;
+  height: 100vh;
 }
 
 
 .container {
   max-width: 800px;
   margin: auto;
-  background: white;
   padding: 20px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 
@@ -54,4 +58,65 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+#task
+{
+  font-size: large;
+}
+
+#addBtn
+{
+  font-size: large;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    flex: 1;
+}
+
+.task-text {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.timestamp {
+    font-size: 17px;
+    color: #ff0000;
+    white-space: nowrap;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+@media (max-width: 620px) {
+    .task-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .task-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timestamp {
+        white-space: normal;
+    }
+
+    .buttons {
+        justify-content: flex-end;
+    }
 }
